@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:remove="all">索取样品</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <p><span>昵称：</span><span th:text="${name}"></span> </p>
+        <p><span>email：</span><span th:text="${emialAddress}"></span> </p>
+        <p><span>所在省份：</span><span th:text="${state}"></span> </p>
+        <p><span>分类：</span><span th:text="${category}"></span> </p>
+        <p><span>联系电话：</span><span th:text="${phoneNumber}"></span> </p>
+        <p><span>项目描述：</span><span th:text="${projectContext}"></span> </p>
+        <br/>
+        <br/>
+        <br/>
+        <p> 发送时间：
+            <span th:text="${#dates.format(subscriptionDate)}">28-12-2012</span>
+        </p>
+
+    </body>
+</html>
